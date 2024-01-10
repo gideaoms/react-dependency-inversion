@@ -15,7 +15,7 @@ class FakeCityRepository implements CityRepository {
 }
 
 describe("Cities", () => {
-  test("should test the quantity", async () => {
+  test("should print the list", async () => {
     const cityRepository = new FakeCityRepository();
     render(
       <Provider value={{ cityRepository }}>
